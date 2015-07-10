@@ -1,0 +1,304 @@
+/* line 5, ../../../../.rvm/gems/ruby-1.9.3-p545/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../.rvm/gems/ruby-1.9.3-p545/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../.rvm/gems/ruby-1.9.3-p545/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../.rvm/gems/ruby-1.9.3-p545/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../.rvm/gems/ruby-1.9.3-p545/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../.rvm/gems/ruby-1.9.3-p545/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+
+/* line 103, ../../../../.rvm/gems/ruby-1.9.3-p545/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../.rvm/gems/ruby-1.9.3-p545/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../.rvm/gems/ruby-1.9.3-p545/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 4, ../sass/style.scss */
+body {
+  font-size: 100%;
+}
+
+footer {
+  font-size: 80%;
+  margin-left: 10%;
+  height: 30px;
+  line-height: 60px;
+}
+
+/* top */
+
+#top {
+  background: url("../img/sun.jpeg") no-repeat;
+  background-size: 100% 100%;
+  height: 500px;
+}
+
+#userInfo a {
+  text-decoration: none;
+  color: white;
+  padding-right: 5%;
+  font-size: 20px;
+  border: 0;
+}
+
+#logOut {
+  border: 1px solid white;
+  background-color: transparent;
+  color: white;
+  outline: none;
+}
+
+#search {
+  color: white;
+  margin-top: 150px;
+  text-align: center;
+}
+
+#search p:first-child {
+  font-size: 36px;
+}
+
+#search .prompt {
+  font-size: 20px;
+  color: #aaa;
+  padding: 10px 0;
+}
+
+.searchArea {
+  height: 35px;
+}
+
+.searchButton {
+  width: 100px;
+  height: 40px;
+  background-color: #68DDAD;
+  font-size: 16px;
+  border: 0;
+  color: #fff;
+}
+
+.searchInput {
+  margin-top: 10px;
+  height: 35px;
+  width: 400px;
+  opacity: 0.4;
+  border: 0;
+  padding: 3px;
+  font-size: 18px;
+}
+
+#userInfo {
+  margin-left: 70%;
+  padding-top: 100px;
+}
+
+/* work flow */
+
+#workflow, #reason {
+  text-align: center;
+  font-size: 20px;
+}
+
+#workflow h2, #reason h2 {
+  margin-top: 50px;
+}
+
+#workflow ul, #reason ul {
+  margin: 30px auto 50px;
+}
+
+#workflow ul li {
+  display: inline-block;
+  width: 25%;
+  height: 150px;
+  margin-left: 5%;
+  vertical-align: top;
+}
+
+#workflow img {
+  display: inline-block;
+  width: 50px;
+  height: 50px;;
+}
+
+#workflow ul h3 {
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+#workflow ul p, #reason ul p {
+  color: #C0C0C1;
+}
+
+/* reason */
+
+#reason {
+  border-top: 1px solid #bbb;
+}
+
+#reason .advantage .features {
+  display: inline-block;
+  width: 35%;
+  margin-left: 10%;
+  text-align: left;
+  vertical-align: top;
+}
+
+#reason .advantage img {
+  float: left;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+}
+
+#reason .advantage .descripbe {
+  margin-left: 15%;
+}
+
+#reason ul {
+  width: 90%;
+}
+
+#reason ul li {
+  margin-bottom: 30px;
+}
+
+#reason ul h3 {
+  margin-bottom: 10px;
+}
+
+
+/* introduction part */
+
+#introduction {
+  text-align: center;
+  padding-top: 100px;
+}
+
+#introduction a {
+  color: black;
+  font-size: 20px;
+  text-decoration: none;
+  border: 1px solid black;
+  margin: 0 -2px;
+}
+
+#today {
+  background-color: #525D76;
+  color: white;
+}
+
+#introduction p {
+  margin: 50px 35%;
+  width: 30%;
+}
+
+#personInfo p {
+  text-align: center;
+}
+
+#personInfo p:nth-child(2) {
+  color: grey;
+}
+
+#first {
+  background: url("../img/left-boy.jpg") no-repeat;
+  background-size: 100%;
+  height: 60px;
+  width: 60px;
+  display: inline-block;
+}
+
+#second {
+  background: url("../img/middle-boy.jpg") no-repeat;
+  background-size: 100%;
+  height: 60px;
+  width: 60px;
+  display: inline-block;
+  margin: 0px 30px;
+}
+
+#third {
+  background: url("../img/right-boy.jpg") no-repeat;
+  background-size: 100%;
+  height: 60px;
+  width: 60px;
+  display: inline-block;
+}
+
+#carton-logo {
+  text-align: center;
+}
+
+/* bottom part */
+
+#bottom {
+  background: url("../img/bottom-bg.jpg") no-repeat;
+  background-size: 100% 100%;
+  height: 160px;
+  text-align: center;
+}
+
+#bottomSearch p {
+  display: inline;
+  line-height: 10px;
+}
+
+#secondSearch {
+  display: inline;
+}
+
+#bottomSearch {
+  padding-top: 60px;
+}
