@@ -12,293 +12,442 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font: inherit;
-  font-size: 100%;
-  vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
 }
 
 /* line 22, ../../../../.rvm/gems/ruby-1.9.3-p545/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 html {
-  line-height: 1;
+    line-height: 1;
 }
 
 /* line 24, ../../../../.rvm/gems/ruby-1.9.3-p545/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
-  list-style: none;
+    list-style: none;
 }
 
 /* line 26, ../../../../.rvm/gems/ruby-1.9.3-p545/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 table {
-  border-collapse: collapse;
-  border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 /* line 28, ../../../../.rvm/gems/ruby-1.9.3-p545/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
-  text-align: left;
-  font-weight: normal;
-  vertical-align: middle;
+    text-align: left;
+    font-weight: normal;
+    vertical-align: middle;
 }
 
 /* line 30, ../../../../.rvm/gems/ruby-1.9.3-p545/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
-  quotes: none;
+    quotes: none;
 }
 
 /* line 103, ../../../../.rvm/gems/ruby-1.9.3-p545/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
-  content: "";
-  content: none;
+    content: "";
+    content: none;
 }
 
 /* line 32, ../../../../.rvm/gems/ruby-1.9.3-p545/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 a img {
-  border: none;
+    border: none;
 }
 
 /* line 116, ../../../../.rvm/gems/ruby-1.9.3-p545/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
-  display: block;
+    display: block;
 }
 
 /* line 4, ../sass/style.scss */
 body {
-  font-size: 100%;
+    font-size: 100%;
 }
 
 footer {
-  font-size: 80%;
-  margin-left: 10%;
-  height: 30px;
-  line-height: 60px;
+    font-size: 80%;
+    margin-left: 10%;
+    height: 30px;
+    line-height: 60px;
+}
+
+.shortLine {
+    /*border: 2px solid lightgray;*/
+    height: 2px;
+    width: 50px;
+    margin: 5px 48% 15px auto;
+    background-color: lightgray;
+    opacity: 0.5;
 }
 
 /* top */
 
 #top {
-  background: url("../img/sun.jpeg") no-repeat;
-  background-size: 100% 100%;
-  height: 500px;
+    background: url("../img/sun.jpeg") no-repeat;
+    background-size: 100% 100%;
+    height: 500px;
+    position: relative;
+    top: 0;
+    right: 0;
+}
+
+.filter {
+    position: absolute;
+    background-color: lightblue;
+    opacity: 0.3;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+#topText {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
 }
 
 #userInfo a {
-  text-decoration: none;
-  color: white;
-  padding-right: 5%;
-  font-size: 20px;
-  border: 0;
+    text-decoration: none;
+    color: white;
+    padding-right: 5%;
+    font-size: 20px;
 }
 
-#logOut {
-  border: 1px solid white;
-  background-color: transparent;
-  color: white;
-  outline: none;
+#userInfo a:last-child {
+    border: 1px solid white;
+    padding: 2%;
+    margin-left: 2%;
 }
 
 #search {
-  color: white;
-  margin-top: 150px;
-  text-align: center;
+    color: white;
+    margin-top: 150px;
+    text-align: center;
 }
 
 #search p:first-child {
-  font-size: 36px;
+    font-size: 36px;
 }
 
 #search .prompt {
-  font-size: 20px;
-  color: #aaa;
-  padding: 10px 0;
+    font-size: 20px;
+    color: #aaa;
+    padding: 10px 0;
 }
 
 .searchArea {
-  height: 35px;
+    padding-top: 15px;
 }
 
 .searchButton {
-  width: 100px;
-  height: 40px;
-  background-color: #68DDAD;
-  font-size: 16px;
-  border: 0;
-  color: #fff;
+    width: 100px;
+    height: 41px;
+    background-color: #68DDAD;
+    font-size: 18px;
+    border: 0;
+    color: #fff;
+    padding: 3px;
 }
 
 .searchInput {
-  margin-top: 10px;
-  height: 35px;
-  width: 400px;
-  opacity: 0.4;
-  border: 0;
-  padding: 3px;
-  font-size: 18px;
+    height: 35px;
+    width: 400px;
+    opacity: 0.2;
+    border: 0;
+    padding: 3px;
+    font-size: 18px;
+}
+
+::-webkit-input-placeholder {
+    /* WebKit browsers */
+    color: dimgrey;
+    opacity: 1;
+}
+
+:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: white;
+    opacity: 1;
+}
+
+::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: white;
+    opacity: 1;
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10+ */
+    color: white;
 }
 
 #userInfo {
-  margin-left: 70%;
-  padding-top: 100px;
+    margin-left: 70%;
+    padding-top: 100px;
 }
 
 /* work flow */
 
+/*#workflow {*/
+/*border-bottom: 1px solid lightgray;*/
+/*}*/
 #workflow, #reason {
-  text-align: center;
-  font-size: 20px;
+    text-align: center;
+    font-size: 20px;
 }
 
 #workflow h2, #reason h2 {
-  margin-top: 50px;
+    margin-top: 50px;
 }
 
 #workflow ul, #reason ul {
-  margin: 30px auto 50px;
+    margin: 30px auto 50px;
 }
 
 #workflow ul li {
-  display: inline-block;
-  width: 25%;
-  height: 150px;
-  margin-left: 5%;
-  vertical-align: top;
+    display: inline-block;
+    width: 33%;
+    height: 150px;
+    vertical-align: top;
+}
+
+#workflow ul li p {
+    width: 40%;
+    padding: 0 30%;
 }
 
 #workflow img {
-  display: inline-block;
-  width: 50px;
-  height: 50px;;
+    display: inline-block;
+    width: 50px;
+    height: 50px;;
 }
 
 #workflow ul h3 {
-  font-weight: bold;
-  margin: 10px 0;
+    font-weight: bold;
+    margin: 10px 0;
 }
 
 #workflow ul p, #reason ul p {
-  color: #C0C0C1;
+    color: #C0C0C1;
 }
 
 /* reason */
 
 #reason {
-  border-top: 1px solid #bbb;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
 }
 
 #reason .advantage .features {
-  display: inline-block;
-  width: 35%;
-  margin-left: 10%;
-  text-align: left;
-  vertical-align: top;
+    display: inline-block;
+    width: 30%;
+    text-align: left;
+    vertical-align: top;
+    margin: auto 9%;
 }
 
 #reason .advantage img {
-  float: left;
-  display: inline-block;
-  width: 30px;
-  height: 30px;
+    float: left;
+    display: inline-block;
+    width: 10%;
+    height: 40px;
 }
 
-#reason .advantage .descripbe {
-  margin-left: 15%;
-}
-
-#reason ul {
-  width: 90%;
+#reason .advantage .describe {
+    margin-left: 15%;
 }
 
 #reason ul li {
-  margin-bottom: 30px;
+    margin-bottom: 30px;
 }
 
 #reason ul h3 {
-  margin-bottom: 10px;
+    margin-bottom: 10px;
 }
-
 
 /* introduction part */
 
 #introduction {
-  text-align: center;
-  padding-top: 100px;
+    text-align: center;
+    padding-top: 100px;
 }
 
 #introduction a {
-  color: black;
-  font-size: 20px;
-  text-decoration: none;
-  border: 1px solid black;
-  margin: 0 -2px;
+    display: inline-block;
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+    border: 1px solid black;
+    padding: 7px;
+    width: 150px;
 }
 
-#today {
-  background-color: #525D76;
-  color: white;
+#introduction a:nth-child(1) {
+    background-color: #525D76;
+    color: white;
 }
 
 #introduction p {
-  margin: 50px 35%;
-  width: 30%;
+    margin: 50px 35%;
+    width: 30%;
 }
 
-#personInfo p {
-  text-align: center;
-}
-
-#personInfo p:nth-child(2) {
-  color: grey;
-}
-
-#first {
-  background: url("../img/left-boy.jpg") no-repeat;
-  background-size: 100%;
-  height: 60px;
-  width: 60px;
-  display: inline-block;
-}
-
-#second {
-  background: url("../img/middle-boy.jpg") no-repeat;
-  background-size: 100%;
-  height: 60px;
-  width: 60px;
-  display: inline-block;
-  margin: 0px 30px;
-}
-
-#third {
-  background: url("../img/right-boy.jpg") no-repeat;
-  background-size: 100%;
-  height: 60px;
-  width: 60px;
-  display: inline-block;
-}
-
-#carton-logo {
-  text-align: center;
+#introduction p:before {
+    content: "‘‘";
+    font-size: 50px;
+    color: lightgray;
+    display: block;
 }
 
 /* bottom part */
-
 #bottom {
-  background: url("../img/bottom-bg.jpg") no-repeat;
-  background-size: 100% 100%;
-  height: 160px;
-  text-align: center;
+    background: url("../img/bottom-bg.jpg") no-repeat;
+    background-size: 100% 100%;
+    height: 160px;
+    text-align: center;
 }
 
 #bottomSearch p {
-  display: inline;
-  line-height: 10px;
+    display: inline;
+    line-height: 10px;
+    color: white;
+    font-size: 30px;
 }
 
-#secondSearch {
-  display: inline;
+.secondSearch {
+    display: inline;
+    margin-left: 20px;
 }
 
 #bottomSearch {
-  padding-top: 60px;
+    padding-top: 60px;
+}
+
+/* personInfo part */
+#personInfo {
+    position: relative;
+
+}
+
+#personInfo ul {
+    margin-left: 35%;
+}
+
+#personInfo ul li {
+    display: inline-block;
+    width: 20%;
+    height: 150px;
+    vertical-align: top;
+}
+
+#personInfo img {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    padding-top: 20px;
+}
+
+#personInfo ul li p {
+    display: inline-block;
+    width: 100%;
+}
+
+#personInfo ul li p:nth-child(2) {
+    color: #aaaaaa;
+}
+
+.second {
+    background: url("../img/middle-boy.jpg") no-repeat;
+}
+
+.third {
+    background: url("../img/right-boy.jpg") no-repeat;
+}
+
+.first {
+    background: url("../img/left-boy.jpg") no-repeat;
+
+}
+
+.person {
+    display: inline-block;
+    position: relative;
+    /*margin-left: 270px;*/
+    background-size: 100% 100%;
+    height: 60px;
+    width: 60px;
+    margin-top: 20px;
+    -webkit-border-radius: 50em;
+    -moz-border-radius: 50em;
+    border-radius: 50em;
+    overflow: hidden;
+}
+
+.imgBg {
+    width: 60px;
+    height: 60px;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    background-color: gray;
+    opacity: 0.6;
+    z-index: 1;
+}
+
+.imgBg:hover {
+    opacity: 0;
+}
+
+.bottomSearch {
+    opacity: 1;
+}
+
+.bottomSearch::-webkit-input-placeholder {
+    /* WebKit browsers */
+    color: gray;
+    font-size: 15px;
+    opacity: 1;
+}
+
+/* nav part */
+nav ul {
+    display: inline-block;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 20px 0 30px 20px;
+}
+
+nav ul li a {
+    color: #aaaaaa;
+    text-decoration: none;
+}
+
+.bottomNav {
+    margin-left: 50px;
+}
+
+nav img:nth-child(2) {
+    height: 30px;
+    width: 30px;
+    margin-left: 40%;
+}
+
+nav img:nth-child(3) {
+    height: 30px;
+    width: 30px;
+    text-align: right;
+    margin-right: 2%;
 }
