@@ -341,7 +341,7 @@ footer {
 /* personInfo part */
 #personInfo {
     position: relative;
-
+    border-top: 1px solid #F9F9F8;
 }
 
 #personInfo ul {
