@@ -77,10 +77,9 @@ footer {
 }
 
 .shortLine {
-    /*border: 2px solid lightgray;*/
     height: 2px;
-    width: 50px;
-    margin: 5px 48% 15px auto;
+    width: 40px;
+    margin: 5px 48% 15px 48.9%;
     background-color: lightgray;
     opacity: 0.5;
 }
@@ -157,6 +156,7 @@ footer {
     border: 0;
     color: #fff;
     padding: 3px;
+    border-radius: 0 4px 4px 0;
 }
 
 .searchInput {
@@ -166,6 +166,7 @@ footer {
     border: 0;
     padding: 3px;
     font-size: 18px;
+    border-radius: 4px 0 0 4px;
 }
 
 ::-webkit-input-placeholder {
@@ -295,6 +296,11 @@ footer {
 #introduction a:nth-child(1) {
     background-color: #525D76;
     color: white;
+    border-radius: 4px 0 0 4px;
+}
+
+#introduction a:nth-child(2) {
+    border-radius: 0 4px 4px 0;
 }
 
 #introduction p {
