@@ -112,6 +112,8 @@ footer {
   color: white;
   margin-top: 150px;
   text-align: center;
+  z-index: 2;
+  position: relative;
 }
 
 #search p:first-child {
