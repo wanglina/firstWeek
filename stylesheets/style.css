@@ -75,6 +75,7 @@ footer {
     margin-left: 10%;
     height: 30px;
     line-height: 60px;
+    border-radius: 0 4px 4px 0;
 }
 
 .shortLine {
@@ -109,9 +110,11 @@ footer {
 }
 
 #search {
-    color: white;
-    margin-top: 150px;
-    text-align: center;
+  color: white;
+  margin-top: 150px;
+  text-align: center;
+  z-index: 2;
+  position: relative;
 }
 
 #search p:first-child {
@@ -125,14 +128,15 @@ footer {
 }
 
 .searchButton {
-    width: 100px;
-    height: 41px;
-    background-color: #68DDAD;
-    font-size: 16px;
-    border: 0;
-    color: #fff;
-    position: relative;
-    top: -1px;
+  width: 100px;
+  height: 41px;
+  background-color: #68DDAD;
+  font-size: 16px;
+  border: 0;
+  color: #fff;
+  position: relative;
+  top: -1px;
+  border-radius: 0 4px 4px 0;
 }
 
 .searchInput {
@@ -143,6 +147,8 @@ footer {
     border: 0;
     padding: 3px;
     font-size: 18px;
+    border-radius: 4px 0 0 4px;
+  
 }
 
 .cover {
