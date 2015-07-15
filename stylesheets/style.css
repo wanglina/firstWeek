@@ -105,12 +105,8 @@ footer {
 }
 
 #userInfo li {
-  display: inline-block;
-}
-
-.signup {
-    border: 1px solid white;
-    padding: 5px;
+    float: left;
+    margin-right: 10px;
 }
 
 #search {
